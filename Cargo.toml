@@ -1,0 +1,22 @@
+[package]
+name = "ecs-lib-rs"
+version = "0.1.0"
+edition = "2018"
+authors = ["abhyuditjain"]
+description = "An Entity Component System (ECS) Framework for learning."
+repository = "https://github.com/abhyuditjain/ecs-rs"
+homepage = "https://github.com/abhyuditjain/ecs-rs"
+license = "MIT"
+readme = "README.md"
+keywords = [
+    "ecs",
+    "entity",
+    "component",
+    "game",
+]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+eyre = "0.6.5"
+thiserror = "1.0.28"
