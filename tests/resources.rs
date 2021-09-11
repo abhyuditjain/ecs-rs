@@ -3,7 +3,7 @@ use std::ops::{Deref, DerefMut};
 #[cfg(test)]
 mod tests {
     use crate::FpsResource;
-    use ecs_rs::World;
+    use ecs_lib_rs::World;
     use std::any::Any;
 
     #[test]

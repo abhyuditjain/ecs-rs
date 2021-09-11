@@ -1,6 +1,6 @@
 #[cfg(test)]
 mod tests {
-    use ecs_rs::World;
+    use ecs_lib_rs::World;
     use eyre::Result;
     use std::any::Any;
     use std::cell::RefCell;

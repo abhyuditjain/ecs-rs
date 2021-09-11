@@ -21,7 +21,7 @@ impl World {
 
     /// Add a resource.
     /// ```
-    /// use ecs_rs::World;
+    /// use ecs_lib_rs::World;
     /// let mut world = World::new();
     /// world.add_resource(1_u32);
     /// assert_eq!(world.get_resource::<u32>(), Some(&1));
@@ -32,7 +32,7 @@ impl World {
 
     /// Query for a resource and get a reference to it. The type of the resource must be added in so that it can find it.
     /// ```
-    /// use ecs_rs::World;
+    /// use ecs_lib_rs::World;
     /// let mut world = World::new();
     /// assert_eq!(world.get_resource::<u32>(), None);
     /// world.add_resource(1_u32);
@@ -44,7 +44,7 @@ impl World {
 
     /// Query for a resource and get a mutable reference to it. The type of the resource must be added in so that it can find it.
     /// ```
-    /// use ecs_rs::World;
+    /// use ecs_lib_rs::World;
     /// let mut world = World::new();
     /// assert_eq!(world.get_resource_mut::<u32>(), None);
     /// world.add_resource(1_u32);
@@ -63,7 +63,7 @@ impl World {
     /// Removes the resource from the world. Returns `None` if the resource wasn't present and hence was not deleted.
     /// Otherwise, it returns `Some(data)`
     /// ```   
-    /// use ecs_rs::World;
+    /// use ecs_lib_rs::World;
     /// let mut world = World::new();
     /// world.add_resource(1_u32);
     /// world.remove_resource::<u32>();
@@ -75,7 +75,7 @@ impl World {
 
     /// Register a component. The type of the resource must be added in so that it can find it.
     /// ```
-    /// use ecs_rs::World;
+    /// use ecs_lib_rs::World;
     /// let mut world = World::new();
     /// world.register_component::<u32>();
     ///
